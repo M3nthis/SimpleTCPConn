@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+// Client conntects to server
 func main() {
 	conn, _ := net.Dial("tcp", "127.0.0.1:8080")
 	for {
