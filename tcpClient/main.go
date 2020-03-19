@@ -17,5 +17,6 @@ func main() {
 
 		messaggio, _ := bufio.NewReader(conn).ReadString('\n')
 		fmt.Printf("Messaggio ricevuto da server:\n%s\n", messaggio)
+		fmt.Printf("\n")
 	}
 }
