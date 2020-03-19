@@ -16,7 +16,7 @@ func main() {
 
 		fmt.Fprintf(conn, testo+"\n")
 
-		// New reader ritorna un buffer
+		// New reader ritorna un buffer con dimensioni di default
 		messaggio, _ := bufio.NewReader(conn).ReadString('\n')
 		fmt.Printf("Messaggio ricevuto da server:\n%s\n", messaggio)
 		text := "end"
